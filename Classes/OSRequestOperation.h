@@ -8,7 +8,7 @@
 #import "RestKit.h"
 
 
-@interface HMLRequestOperation : NSOperation <NSCopying>
+@interface OSRequestOperation : NSOperation <NSCopying>
 {
     RKRequestMethod _requestMethod;
 }

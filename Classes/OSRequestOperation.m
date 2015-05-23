@@ -4,15 +4,15 @@
 //
 
 #import <RestKit/ObjectMapping/RKHTTPUtilities.h>
-#import "HMLRequestOperation.h"
-#import "HMLRequestOperation_Protected.h"
+#import "OSRequestOperation.h"
+#import "OSRequestOperation_Protected.h"
 
-@interface HMLRequestOperation ()
+@interface OSRequestOperation ()
 @property(nonatomic) BOOL finishedFlag;
 @property(nonatomic) BOOL executingFlag;
 @end
 
-@implementation HMLRequestOperation
+@implementation OSRequestOperation
 {
     BOOL _finishedFlag;
     BOOL _executingFlag;
@@ -184,7 +184,7 @@
 
 - (id)copyWithZone:(NSZone *)zone
 {
-    HMLRequestOperation *copy = (HMLRequestOperation *) [[[self class] allocWithZone:zone] init];
+    OSRequestOperation *copy = (OSRequestOperation *) [[[self class] allocWithZone:zone] init];
 
     if (copy != nil)
     {

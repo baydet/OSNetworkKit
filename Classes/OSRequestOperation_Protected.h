@@ -5,10 +5,10 @@
 
 #import <Foundation/Foundation.h>
 #import "RestKit.h"
-#import "HMLRequestOperation.h"
+#import "OSRequestOperation.h"
 
 
-@interface HMLRequestOperation (Protected)
+@interface OSRequestOperation (Protected)
 
 @property(readonly) NSDictionary *parameters;
 @property(readonly) void (^successBlock)(RKObjectRequestOperation *operation, RKMappingResult *mappingResult);

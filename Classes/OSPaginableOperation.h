@@ -4,10 +4,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "HMLRequestOperation.h"
+#import "OSRequestOperation.h"
 
 
-@protocol HMLPaginableOperation <NSObject>
+@protocol OSPaginableOperation <NSObject>
 @required
 @property(nonatomic, assign) NSUInteger page;
 @property(nonatomic, assign) NSUInteger perPage;
