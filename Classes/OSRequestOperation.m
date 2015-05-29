@@ -58,14 +58,12 @@
     RKRoute *const route = [[self class] route];
 
     static dispatch_once_t token = nil;
-    dispatch_once(&token, ^{
-        RKMapping *const errorMapping = [self errorMapping];
-        if (errorMapping)
-        {
-            RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:errorMapping method:RKRequestMethodAny pathPattern:nil keyPath:nil statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassClientError)];
-            [manager addResponseDescriptor:responseDescriptor];
-        }
-    });
+    RKMapping *const errorMapping = [self errorMapping];
+    if (errorMapping)
+    {
+        RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:errorMapping method:RKRequestMethodAny pathPattern:nil keyPath:nil statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassClientError)];
+        [manager addResponseDescriptor:responseDescriptor];
+    }
 
     if (requestDescriptor)
         [manager addRequestDescriptor:requestDescriptor];
