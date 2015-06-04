@@ -145,9 +145,10 @@
 
 - (void (^)(RKObjectRequestOperation *, NSError *))errorBlock
 {
+    __weak typeof(self) wSelf = self;
     return ^(RKObjectRequestOperation *operation, NSError *error) {
         NSLog(@"%@", error.localizedDescription);
-        [self callFinishBlockWithData:nil error:error];
+        [wSelf callFinishBlockWithData:nil error:error];
     };
 }
 
@@ -158,8 +159,9 @@
 
 - (void (^)(RKObjectRequestOperation *operation, RKMappingResult *mappingResult))successBlock
 {
+    __weak typeof(self) wSelf = self;
     return ^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
-        [self callFinishBlockWithData:mappingResult.array error:nil];
+        [wSelf callFinishBlockWithData:mappingResult.array error:nil];
     };
 }
 
