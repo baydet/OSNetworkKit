@@ -20,11 +20,11 @@ typedef NS_ENUM(NSInteger, OSOperationState){
 @implementation OSRKRequestOperation
 
 + (NSSet *) keyPathsForValuesAffectingIsExecuting {
-    return [NSSet setWithObject:@"state"];
+    return [NSSet setWithObject:@"operationState"];
 }
 
 + (NSSet *) keyPathsForValuesAffectingIsFinished {
-    return [NSSet setWithObject:@"state"];
+    return [NSSet setWithObject:@"operationState"];
 }
 
 + (NSString *)URLPattern
