@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "OSRKRequestOperation.h"
 
 @interface AppDelegate ()
 

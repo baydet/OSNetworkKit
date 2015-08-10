@@ -9,12 +9,7 @@
 
 
 @interface OSRequestOperation : NSOperation <NSCopying>
-{
-    RKRequestMethod _requestMethod;
-}
-- (instancetype)initWithRequestMethod:(RKRequestMethod)requestMethod NS_DESIGNATED_INITIALIZER;
 
-//callback methods
 @property(nonatomic, copy) void (^finishBlock)(id responseObject, NSError *error);
 @property(nonatomic, strong) id object;
 

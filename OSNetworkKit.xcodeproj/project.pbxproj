@@ -17,6 +17,7 @@
 		8608A4861B1076360077AB3F /* OSNetworkKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8608A4851B1076360077AB3F /* OSNetworkKitTests.m */; };
 		ACCA59FA84FD148E961131B6 /* OSRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCA5D08419E42B86CC3C9BF /* OSRequestOperation.m */; };
 		C4349BCF09AE7B72F58CE51B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30032F37AA663B6F7ACEA6CC /* libPods.a */; };
+		F2FC31A867807444633AC9AA /* OSRKRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FC35F73C21AC763ED9920C /* OSRKRequestOperation.m */; };
 		F2FC37DB90F36D2829B8159E /* OSObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FC3A45C9E23FC9A5650DF5 /* OSObjectManager.m */; };
 /* End PBXBuildFile section */
 
@@ -49,10 +50,12 @@
 		8608A4851B1076360077AB3F /* OSNetworkKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSNetworkKitTests.m; sourceTree = "<group>"; };
 		ACCA52BE71439245B6CC38A5 /* OSRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSRequestOperation.h; sourceTree = "<group>"; };
 		ACCA556B5790D7E96E2ABE17 /* OSPaginableOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSPaginableOperation.h; sourceTree = "<group>"; };
-		ACCA55C570AC42F3ED5559D2 /* OSRequestOperation_Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSRequestOperation_Protected.h; sourceTree = "<group>"; };
+		ACCA55C570AC42F3ED5559D2 /* OSRestKitOperationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSRestKitOperationProtocol.h; sourceTree = "<group>"; };
 		ACCA5D08419E42B86CC3C9BF /* OSRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSRequestOperation.m; sourceTree = "<group>"; };
+		F2FC35F73C21AC763ED9920C /* OSRKRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSRKRequestOperation.m; sourceTree = "<group>"; };
 		F2FC3A45C9E23FC9A5650DF5 /* OSObjectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSObjectManager.m; sourceTree = "<group>"; };
 		F2FC3CA39F9E5B23C18155BA /* OSObjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSObjectManager.h; sourceTree = "<group>"; };
+		F2FC3DF578ACFE147ABA930E /* OSRKRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSRKRequestOperation.h; sourceTree = "<group>"; };
 		FD32520F2471026E6DB32993 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,12 +153,14 @@
 		ACCA534FC8B7A5D9F9F04342 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				ACCA55C570AC42F3ED5559D2 /* OSRequestOperation_Protected.h */,
+				ACCA55C570AC42F3ED5559D2 /* OSRestKitOperationProtocol.h */,
 				ACCA556B5790D7E96E2ABE17 /* OSPaginableOperation.h */,
 				ACCA5D08419E42B86CC3C9BF /* OSRequestOperation.m */,
 				ACCA52BE71439245B6CC38A5 /* OSRequestOperation.h */,
 				F2FC3A45C9E23FC9A5650DF5 /* OSObjectManager.m */,
 				F2FC3CA39F9E5B23C18155BA /* OSObjectManager.h */,
+				F2FC35F73C21AC763ED9920C /* OSRKRequestOperation.m */,
+				F2FC3DF578ACFE147ABA930E /* OSRKRequestOperation.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 				8608A4691B1076360077AB3F /* main.m in Sources */,
 				ACCA59FA84FD148E961131B6 /* OSRequestOperation.m in Sources */,
 				F2FC37DB90F36D2829B8159E /* OSObjectManager.m in Sources */,
+				F2FC31A867807444633AC9AA /* OSRKRequestOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

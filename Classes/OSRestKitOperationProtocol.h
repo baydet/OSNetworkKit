@@ -8,30 +8,23 @@
 #import "OSRequestOperation.h"
 
 
-@interface OSRequestOperation (Protected)
+@protocol OSRestKitOperationProtocol <NSObject>
+
+@required
 
 @property(readonly) NSDictionary *parameters;
 @property(readonly) void (^successBlock)(RKObjectRequestOperation *operation, RKMappingResult *mappingResult);
 
 //methods for subclassing
-
 + (NSString *)URLPattern;
-
 + (RKMapping *)mapping;
-
 + (RKMapping *)errorMapping;
-
 + (RKRoute *)route;
-
 + (NSArray *)responseDescriptors;
-
 + (RKRequestDescriptor *)requestDescriptor;
-
 + (NSFetchRequest *(^)(NSURL *))fetchRequestBlock;
-
 - (void (^)(RKObjectRequestOperation *, NSError *))errorBlock;
-
 - (void)callFinishBlockWithData:(id const)data error:(NSError *)error;
-
 - (RKObjectRequestOperation *const)operation;
+
 @end
