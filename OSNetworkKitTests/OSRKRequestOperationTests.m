@@ -6,7 +6,6 @@
 //  Copyright (c) 2015 Orangesoft. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import "OSObjectManager.h"
 #import "OSRKRequestOperation.h"
@@ -31,6 +30,10 @@
     return [RKMapping new];
 }
 
++ (RKRoute *)route
+{
+    return [RKRoute routeWithName:@"name" pathPattern:[self URLPattern] method:RKRequestMethodGET];
+}
 
 @end
 
@@ -39,7 +42,6 @@
 @property(nonatomic) NSUInteger responseDescriptorsCount;
 @property(nonatomic) NSUInteger requestDescriptorsCount;
 @property(nonatomic) NSUInteger routesCount;
-@property(nonatomic) NSUInteger fetchRequestBlocksCount;
 @end
 
 @implementation OSRKRequestOperationTests
@@ -50,7 +52,6 @@
     self.responseDescriptorsCount = self.manager.responseDescriptors.count;
     self.requestDescriptorsCount = self.manager.responseDescriptors.count;
     self.routesCount = self.manager.responseDescriptors.count;
-    self.fetchRequestBlocksCount = self.manager.responseDescriptors.count;
     [OSTestOperation new];
 }
 
@@ -63,6 +64,8 @@
     XCTAssert(expectedResponseDescriptorsCount == self.manager.responseDescriptors.count, @"unexpected number of response descriptors. Expected %lu, Actual %lu", expectedResponseDescriptorsCount, self.manager.responseDescriptors.count);
     const NSUInteger expectedRequestDescriptorsCount = self.requestDescriptorsCount + ([OSTestOperation requestDescriptor] ? 1 : 0);
     XCTAssert(expectedRequestDescriptorsCount == self.manager.requestDescriptors.count, @"unexpected number of request descriptors. Expected %lu, Actual %lu", expectedRequestDescriptorsCount, self.manager.requestDescriptors.count);
+    const NSUInteger expectedRoutesCount = self.routesCount + ([OSTestOperation route] ? 1 : 0);
+    XCTAssert(expectedRoutesCount == self.manager.router.routeSet.allRoutes.count, @"unexpected number of routes. Expected %lu, Actual %lu", expectedRoutesCount, self.manager.router.routeSet.allRoutes.count);
 }
 
 
