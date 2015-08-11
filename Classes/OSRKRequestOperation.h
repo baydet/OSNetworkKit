@@ -14,6 +14,4 @@
 }
 - (instancetype)initWithRequestMethod:(RKRequestMethod)requestMethod NS_DESIGNATED_INITIALIZER;
 
-- (id)copyWithZone:(NSZone *)zone;
-
 @end
