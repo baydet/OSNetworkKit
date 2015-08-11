@@ -60,9 +60,9 @@
 
 - (void)testProtocol {
     const NSUInteger expectedResponseDescriptorsCount = self.responseDescriptorsCount + [OSTestOperation responseDescriptors].count + ([OSTestOperation errorMapping] ? 1 : 0);
-    XCTAssert(expectedResponseDescriptorsCount == self.manager.responseDescriptors.count, @"unexpected number of response descriptors. Expected %d, Actual %d", expectedResponseDescriptorsCount, self.manager.responseDescriptors.count);
+    XCTAssert(expectedResponseDescriptorsCount == self.manager.responseDescriptors.count, @"unexpected number of response descriptors. Expected %lu, Actual %lu", expectedResponseDescriptorsCount, self.manager.responseDescriptors.count);
     const NSUInteger expectedRequestDescriptorsCount = self.requestDescriptorsCount + ([OSTestOperation requestDescriptor] ? 1 : 0);
-    XCTAssert(expectedRequestDescriptorsCount == self.manager.requestDescriptors.count, @"unexpected number of request descriptors. Expected %d, Actual %d", expectedRequestDescriptorsCount, self.manager.requestDescriptors.count);
+    XCTAssert(expectedRequestDescriptorsCount == self.manager.requestDescriptors.count, @"unexpected number of request descriptors. Expected %lu, Actual %lu", expectedRequestDescriptorsCount, self.manager.requestDescriptors.count);
 }
 
 
