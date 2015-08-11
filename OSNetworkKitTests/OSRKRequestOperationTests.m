@@ -8,16 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "OSObjectManager.h"
+#import "OSRequestOperation.h"
 
-@interface OSNetworkKitTests : XCTestCase
-
+@interface OSRKRequestOperationTests : XCTestCase
+@property(nonatomic, strong) OSObjectManager *manager;
 @end
 
-@implementation OSNetworkKitTests
+@implementation OSRKRequestOperationTests
 
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    
 }
 
 - (void)tearDown {
