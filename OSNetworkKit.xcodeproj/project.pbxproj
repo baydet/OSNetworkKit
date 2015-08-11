@@ -13,8 +13,10 @@
 		D3E9E1291B79CB9800D781F4 /* NetworkKitTestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3E9E1271B79CB9800D781F4 /* NetworkKitTestModel.xcdatamodeld */; };
 		D3E9E12C1B79CBC500D781F4 /* TestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E9E12B1B79CBC500D781F4 /* TestEntity.m */; };
 		D3E9E1351B79D23A00D781F4 /* OSNetworkKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D3E9E1341B79D23A00D781F4 /* OSNetworkKit.h */; };
-		D3E9E1371B79D23A00D781F4 /* OSNetworkKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E9E1361B79D23A00D781F4 /* OSNetworkKit.m */; };
 		D3E9E14A1B79D2F900D781F4 /* OSObjectManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E9E1491B79D2F900D781F4 /* OSObjectManagerTests.m */; };
+		D3E9E14B1B79D48000D781F4 /* OSRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCA5D08419E42B86CC3C9BF /* OSRequestOperation.m */; };
+		D3E9E14C1B79D48000D781F4 /* OSObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FC3A45C9E23FC9A5650DF5 /* OSObjectManager.m */; };
+		D3E9E14D1B79D48000D781F4 /* OSRKRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FC35F73C21AC763ED9920C /* OSRKRequestOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,16 +35,6 @@
 /* Begin PBXFileReference section */
 		30032F37AA663B6F7ACEA6CC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ABEF16D29CD683C31612D77 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		8608A4671B1076360077AB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8608A4681B1076360077AB3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8608A46A1B1076360077AB3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8608A46B1B1076360077AB3F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8608A46E1B1076360077AB3F /* OSNetworkKit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OSNetworkKit.xcdatamodel; sourceTree = "<group>"; };
-		8608A4701B1076360077AB3F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8608A4711B1076360077AB3F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8608A4741B1076360077AB3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8608A4761B1076360077AB3F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8608A4791B1076360077AB3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8608A47F1B1076360077AB3F /* OSNetworkKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSNetworkKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8608A4841B1076360077AB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8608A4851B1076360077AB3F /* OSRKRequestOperationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSRKRequestOperationTests.m; sourceTree = "<group>"; };
@@ -55,7 +47,6 @@
 		D3E9E12B1B79CBC500D781F4 /* TestEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestEntity.m; sourceTree = "<group>"; };
 		D3E9E1321B79D23A00D781F4 /* libOSNetworkKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOSNetworkKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E9E1341B79D23A00D781F4 /* OSNetworkKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSNetworkKit.h; sourceTree = "<group>"; };
-		D3E9E1361B79D23A00D781F4 /* OSNetworkKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSNetworkKit.m; sourceTree = "<group>"; };
 		D3E9E1491B79D2F900D781F4 /* OSObjectManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSObjectManagerTests.m; sourceTree = "<group>"; };
 		F2FC35F73C21AC763ED9920C /* OSRKRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSRKRequestOperation.m; sourceTree = "<group>"; };
 		F2FC3A45C9E23FC9A5650DF5 /* OSObjectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSObjectManager.m; sourceTree = "<group>"; };
@@ -96,7 +87,6 @@
 		8608A45A1B1076360077AB3F = {
 			isa = PBXGroup;
 			children = (
-				8608A4651B1076360077AB3F /* OSNetworkKit */,
 				8608A4821B1076360077AB3F /* OSNetworkKitTests */,
 				D3E9E1331B79D23A00D781F4 /* OSNetworkKit */,
 				8608A4641B1076360077AB3F /* Products */,
@@ -113,31 +103,6 @@
 				D3E9E1321B79D23A00D781F4 /* libOSNetworkKit.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8608A4651B1076360077AB3F /* OSNetworkKit */ = {
-			isa = PBXGroup;
-			children = (
-				8608A46A1B1076360077AB3F /* AppDelegate.h */,
-				8608A46B1B1076360077AB3F /* AppDelegate.m */,
-				8608A4701B1076360077AB3F /* ViewController.h */,
-				8608A4711B1076360077AB3F /* ViewController.m */,
-				8608A4731B1076360077AB3F /* Main.storyboard */,
-				8608A4761B1076360077AB3F /* Images.xcassets */,
-				8608A4781B1076360077AB3F /* LaunchScreen.xib */,
-				8608A46D1B1076360077AB3F /* OSNetworkKit.xcdatamodeld */,
-				8608A4661B1076360077AB3F /* Supporting Files */,
-			);
-			path = OSNetworkKit;
-			sourceTree = "<group>";
-		};
-		8608A4661B1076360077AB3F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8608A4671B1076360077AB3F /* Info.plist */,
-				8608A4681B1076360077AB3F /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		8608A4821B1076360077AB3F /* OSNetworkKitTests */ = {
@@ -180,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				D3E9E1341B79D23A00D781F4 /* OSNetworkKit.h */,
-				D3E9E1361B79D23A00D781F4 /* OSNetworkKit.m */,
 			);
 			path = OSNetworkKit;
 			sourceTree = "<group>";
@@ -359,30 +323,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3E9E1371B79D23A00D781F4 /* OSNetworkKit.m in Sources */,
+				D3E9E14C1B79D48000D781F4 /* OSObjectManager.m in Sources */,
+				D3E9E14B1B79D48000D781F4 /* OSRequestOperation.m in Sources */,
+				D3E9E14D1B79D48000D781F4 /* OSRKRequestOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		8608A4731B1076360077AB3F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8608A4741B1076360077AB3F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8608A4781B1076360077AB3F /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8608A4791B1076360077AB3F /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8608A4871B1076360077AB3F /* Debug */ = {
@@ -556,16 +503,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		8608A46D1B1076360077AB3F /* OSNetworkKit.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				8608A46E1B1076360077AB3F /* OSNetworkKit.xcdatamodel */,
-			);
-			currentVersion = 8608A46E1B1076360077AB3F /* OSNetworkKit.xcdatamodel */;
-			path = OSNetworkKit.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		D3E9E1271B79CB9800D781F4 /* NetworkKitTestModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

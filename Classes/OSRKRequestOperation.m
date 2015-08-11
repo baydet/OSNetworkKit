@@ -64,7 +64,6 @@ typedef NS_ENUM(NSInteger, OSOperationState){
     NSArray *const responseDescriptors = [[self class] responseDescriptors];
     RKRoute *const route = [[self class] route];
 
-    static dispatch_once_t token = nil;
     RKMapping *const errorMapping = [self errorMapping];
     if (errorMapping)
     {
