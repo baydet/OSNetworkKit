@@ -9,35 +9,61 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import "OSObjectManager.h"
-#import "OSRequestOperation.h"
+#import "OSRKRequestOperation.h"
+
+@interface OSTestOperation : OSRKRequestOperation
+@end
+
+@implementation OSTestOperation
+
++ (RKMapping *)mapping
+{
+    return [RKMapping new];
+}
+
++ (NSArray *)responseDescriptors
+{
+    return @[[RKResponseDescriptor responseDescriptorWithMapping:[self mapping] method:RKRequestMethodGET pathPattern:[self URLPattern] keyPath:nil statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)]];
+}
+
++ (RKMapping *)errorMapping
+{
+    return [RKMapping new];
+}
+
+
+@end
 
 @interface OSRKRequestOperationTests : XCTestCase
 @property(nonatomic, strong) OSObjectManager *manager;
+@property(nonatomic) NSUInteger responseDescriptorsCount;
+@property(nonatomic) NSUInteger requestDescriptorsCount;
+@property(nonatomic) NSUInteger routesCount;
+@property(nonatomic) NSUInteger fetchRequestBlocksCount;
 @end
 
 @implementation OSRKRequestOperationTests
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-    
+    self.manager = [OSObjectManager managerWithBaseURL:[NSURL URLWithString:@"http://www.example.com/api"] databaseName:@"testDatabase.sqlite"];
+    self.responseDescriptorsCount = self.manager.responseDescriptors.count;
+    self.requestDescriptorsCount = self.manager.responseDescriptors.count;
+    self.routesCount = self.manager.responseDescriptors.count;
+    self.fetchRequestBlocksCount = self.manager.responseDescriptors.count;
+    [OSTestOperation new];
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+- (void)testProtocol {
+    const NSUInteger expectedResponseDescriptorsCount = self.responseDescriptorsCount + [OSTestOperation responseDescriptors].count + ([OSTestOperation errorMapping] ? 1 : 0);
+    XCTAssert(expectedResponseDescriptorsCount == self.manager.responseDescriptors.count, @"unexpected number of response descriptors. Expected %d, Actual %d", expectedResponseDescriptorsCount, self.manager.responseDescriptors.count);
+    const NSUInteger expectedRequestDescriptorsCount = self.requestDescriptorsCount + ([OSTestOperation requestDescriptor] ? 1 : 0);
+    XCTAssert(expectedRequestDescriptorsCount == self.manager.requestDescriptors.count, @"unexpected number of request descriptors. Expected %d, Actual %d", expectedRequestDescriptorsCount, self.manager.requestDescriptors.count);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
-}
 
 @end

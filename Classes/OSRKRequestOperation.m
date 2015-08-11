@@ -6,7 +6,8 @@
 #import "OSRKRequestOperation.h"
 
 
-typedef NS_ENUM(NSInteger, OSOperationState){
+typedef NS_ENUM(NSInteger, OSOperationState)
+{
     OSInitital,
     OSExecuting,
     OSFinished,
@@ -19,11 +20,13 @@ typedef NS_ENUM(NSInteger, OSOperationState){
 
 @implementation OSRKRequestOperation
 
-+ (NSSet *) keyPathsForValuesAffectingIsExecuting {
++ (NSSet *)keyPathsForValuesAffectingIsExecuting
+{
     return [NSSet setWithObject:@"operationState"];
 }
 
-+ (NSSet *) keyPathsForValuesAffectingIsFinished {
++ (NSSet *)keyPathsForValuesAffectingIsFinished
+{
     return [NSSet setWithObject:@"operationState"];
 }
 
@@ -59,10 +62,12 @@ typedef NS_ENUM(NSInteger, OSOperationState){
 
 + (void)initialize
 {
+    if ([NSStringFromClass([self class]) hasPrefix:@"NSKVONotifying"])
+        return;
     RKObjectManager *const manager = [RKObjectManager sharedManager];
-    RKRequestDescriptor *const requestDescriptor = [[self class] requestDescriptor];
-    NSArray *const responseDescriptors = [[self class] responseDescriptors];
-    RKRoute *const route = [[self class] route];
+    RKRequestDescriptor *const requestDescriptor = [self requestDescriptor];
+    NSArray *const responseDescriptors = [self responseDescriptors];
+    RKRoute *const route = [self route];
 
     RKMapping *const errorMapping = [self errorMapping];
     if (errorMapping)
