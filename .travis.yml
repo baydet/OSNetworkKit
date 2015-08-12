@@ -3,4 +3,5 @@ rvm: 2.2.1
 install:
     - bundle exec pod install
 script:
+	- xctool -workspace OSNetworkKit.xcworkspace -scheme OSNetworkKitTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
     - xctool test -workspace OSNetworkKit.xcworkspace -scheme OSNetworkKitTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
