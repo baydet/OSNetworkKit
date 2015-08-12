@@ -9,6 +9,7 @@
 
 @interface OSObjectManager : RKObjectManager
 
++ (instancetype)managerWithBaseURL:(NSURL *)baseURL;
 + (instancetype)managerWithBaseURL:(NSURL *)baseURL databaseName:(NSString *)dataBaseName;
 
 @end

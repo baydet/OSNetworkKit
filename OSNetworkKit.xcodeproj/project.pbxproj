@@ -7,51 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8608A4691B1076360077AB3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8608A4681B1076360077AB3F /* main.m */; };
-		8608A46C1B1076360077AB3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8608A46B1B1076360077AB3F /* AppDelegate.m */; };
-		8608A46F1B1076360077AB3F /* OSNetworkKit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8608A46D1B1076360077AB3F /* OSNetworkKit.xcdatamodeld */; };
-		8608A4721B1076360077AB3F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8608A4711B1076360077AB3F /* ViewController.m */; };
-		8608A4751B1076360077AB3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8608A4731B1076360077AB3F /* Main.storyboard */; };
-		8608A4771B1076360077AB3F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8608A4761B1076360077AB3F /* Images.xcassets */; };
-		8608A47A1B1076360077AB3F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8608A4781B1076360077AB3F /* LaunchScreen.xib */; };
-		8608A4861B1076360077AB3F /* OSNetworkKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8608A4851B1076360077AB3F /* OSNetworkKitTests.m */; };
-		ACCA59FA84FD148E961131B6 /* OSRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCA5D08419E42B86CC3C9BF /* OSRequestOperation.m */; };
-		C4349BCF09AE7B72F58CE51B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30032F37AA663B6F7ACEA6CC /* libPods.a */; };
-		F2FC31A867807444633AC9AA /* OSRKRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FC35F73C21AC763ED9920C /* OSRKRequestOperation.m */; };
-		F2FC37DB90F36D2829B8159E /* OSObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FC3A45C9E23FC9A5650DF5 /* OSObjectManager.m */; };
+		7D2BACC0E7CC5B5D6168E83F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30032F37AA663B6F7ACEA6CC /* libPods.a */; };
+		D3E9E1661B79D8E000D781F4 /* OSNetworkKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D3E9E1651B79D8E000D781F4 /* OSNetworkKit.h */; };
+		D3E9E16E1B79D8E000D781F4 /* libOSNetworkKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E9E1631B79D8E000D781F4 /* libOSNetworkKit.a */; };
+		D3E9E17A1B79D93A00D781F4 /* OSRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCA5D08419E42B86CC3C9BF /* OSRequestOperation.m */; };
+		D3E9E17B1B79D93A00D781F4 /* OSObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FC3A45C9E23FC9A5650DF5 /* OSObjectManager.m */; };
+		D3E9E17C1B79D93A00D781F4 /* OSRKRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FC35F73C21AC763ED9920C /* OSRKRequestOperation.m */; };
+		D3E9E17E1B79DDC600D781F4 /* OSRKRequestOperationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8608A4851B1076360077AB3F /* OSRKRequestOperationTests.m */; };
+		D3E9E17F1B79DE0800D781F4 /* NetworkKitTestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3E9E1271B79CB9800D781F4 /* NetworkKitTestModel.xcdatamodeld */; };
+		D3E9E1801B79DE0B00D781F4 /* TestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E9E12B1B79CBC500D781F4 /* TestEntity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8608A4801B1076360077AB3F /* PBXContainerItemProxy */ = {
+		D3E9E16F1B79D8E000D781F4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8608A45B1B1076360077AB3F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8608A4621B1076360077AB3F;
+			remoteGlobalIDString = D3E9E1621B79D8E000D781F4;
 			remoteInfo = OSNetworkKit;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D3E9E1611B79D8E000D781F4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				D3E9E1661B79D8E000D781F4 /* OSNetworkKit.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		30032F37AA663B6F7ACEA6CC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ABEF16D29CD683C31612D77 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		8608A4631B1076360077AB3F /* OSNetworkKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSNetworkKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8608A4671B1076360077AB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8608A4681B1076360077AB3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8608A46A1B1076360077AB3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8608A46B1B1076360077AB3F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8608A46E1B1076360077AB3F /* OSNetworkKit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OSNetworkKit.xcdatamodel; sourceTree = "<group>"; };
-		8608A4701B1076360077AB3F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8608A4711B1076360077AB3F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8608A4741B1076360077AB3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8608A4761B1076360077AB3F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8608A4791B1076360077AB3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		8608A47F1B1076360077AB3F /* OSNetworkKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSNetworkKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8608A4841B1076360077AB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8608A4851B1076360077AB3F /* OSNetworkKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSNetworkKitTests.m; sourceTree = "<group>"; };
+		8608A4851B1076360077AB3F /* OSRKRequestOperationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSRKRequestOperationTests.m; sourceTree = "<group>"; };
 		ACCA52BE71439245B6CC38A5 /* OSRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSRequestOperation.h; sourceTree = "<group>"; };
 		ACCA556B5790D7E96E2ABE17 /* OSPaginableOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSPaginableOperation.h; sourceTree = "<group>"; };
 		ACCA55C570AC42F3ED5559D2 /* OSRestKitOperationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSRestKitOperationProtocol.h; sourceTree = "<group>"; };
 		ACCA5D08419E42B86CC3C9BF /* OSRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSRequestOperation.m; sourceTree = "<group>"; };
+		D3E9E1281B79CB9800D781F4 /* NetworkKitTestModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NetworkKitTestModel.xcdatamodel; sourceTree = "<group>"; };
+		D3E9E12A1B79CBC500D781F4 /* TestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestEntity.h; sourceTree = "<group>"; };
+		D3E9E12B1B79CBC500D781F4 /* TestEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestEntity.m; sourceTree = "<group>"; };
+		D3E9E1631B79D8E000D781F4 /* libOSNetworkKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOSNetworkKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E9E1651B79D8E000D781F4 /* OSNetworkKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSNetworkKit.h; sourceTree = "<group>"; };
+		D3E9E16D1B79D8E000D781F4 /* OSNetworkKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSNetworkKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E9E1731B79D8E000D781F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2FC35F73C21AC763ED9920C /* OSRKRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSRKRequestOperation.m; sourceTree = "<group>"; };
 		F2FC3A45C9E23FC9A5650DF5 /* OSObjectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSObjectManager.m; sourceTree = "<group>"; };
 		F2FC3CA39F9E5B23C18155BA /* OSObjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSObjectManager.h; sourceTree = "<group>"; };
@@ -60,18 +64,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8608A4601B1076360077AB3F /* Frameworks */ = {
+		D3E9E1601B79D8E000D781F4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4349BCF09AE7B72F58CE51B /* libPods.a in Frameworks */,
+				7D2BACC0E7CC5B5D6168E83F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8608A47C1B1076360077AB3F /* Frameworks */ = {
+		D3E9E16A1B79D8E000D781F4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3E9E16E1B79D8E000D781F4 /* libOSNetworkKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,8 +95,8 @@
 		8608A45A1B1076360077AB3F = {
 			isa = PBXGroup;
 			children = (
-				8608A4651B1076360077AB3F /* OSNetworkKit */,
-				8608A4821B1076360077AB3F /* OSNetworkKitTests */,
+				D3E9E1641B79D8E000D781F4 /* OSNetworkKit */,
+				D3E9E1711B79D8E000D781F4 /* OSNetworkKitTests */,
 				8608A4641B1076360077AB3F /* Products */,
 				6AC694DA38E78DB3EA05F573 /* Pods */,
 				F4C0B36F9BD5E1014FC2C4D0 /* Frameworks */,
@@ -102,52 +107,10 @@
 		8608A4641B1076360077AB3F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8608A4631B1076360077AB3F /* OSNetworkKit.app */,
-				8608A47F1B1076360077AB3F /* OSNetworkKitTests.xctest */,
+				D3E9E1631B79D8E000D781F4 /* libOSNetworkKit.a */,
+				D3E9E16D1B79D8E000D781F4 /* OSNetworkKitTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8608A4651B1076360077AB3F /* OSNetworkKit */ = {
-			isa = PBXGroup;
-			children = (
-				8608A46A1B1076360077AB3F /* AppDelegate.h */,
-				8608A46B1B1076360077AB3F /* AppDelegate.m */,
-				8608A4701B1076360077AB3F /* ViewController.h */,
-				8608A4711B1076360077AB3F /* ViewController.m */,
-				8608A4731B1076360077AB3F /* Main.storyboard */,
-				8608A4761B1076360077AB3F /* Images.xcassets */,
-				8608A4781B1076360077AB3F /* LaunchScreen.xib */,
-				8608A46D1B1076360077AB3F /* OSNetworkKit.xcdatamodeld */,
-				8608A4661B1076360077AB3F /* Supporting Files */,
-			);
-			path = OSNetworkKit;
-			sourceTree = "<group>";
-		};
-		8608A4661B1076360077AB3F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8608A4671B1076360077AB3F /* Info.plist */,
-				8608A4681B1076360077AB3F /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8608A4821B1076360077AB3F /* OSNetworkKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				8608A4851B1076360077AB3F /* OSNetworkKitTests.m */,
-				8608A4831B1076360077AB3F /* Supporting Files */,
-			);
-			path = OSNetworkKitTests;
-			sourceTree = "<group>";
-		};
-		8608A4831B1076360077AB3F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8608A4841B1076360077AB3F /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		ACCA534FC8B7A5D9F9F04342 /* Classes */ = {
@@ -165,6 +128,34 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		D3E9E1641B79D8E000D781F4 /* OSNetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				D3E9E1651B79D8E000D781F4 /* OSNetworkKit.h */,
+			);
+			path = OSNetworkKit;
+			sourceTree = "<group>";
+		};
+		D3E9E1711B79D8E000D781F4 /* OSNetworkKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				8608A4851B1076360077AB3F /* OSRKRequestOperationTests.m */,
+				D3E9E1271B79CB9800D781F4 /* NetworkKitTestModel.xcdatamodeld */,
+				D3E9E12A1B79CBC500D781F4 /* TestEntity.h */,
+				D3E9E12B1B79CBC500D781F4 /* TestEntity.m */,
+				D3E9E1721B79D8E000D781F4 /* Supporting Files */,
+			);
+			path = OSNetworkKitTests;
+			sourceTree = "<group>";
+		};
+		D3E9E1721B79D8E000D781F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3E9E1731B79D8E000D781F4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F4C0B36F9BD5E1014FC2C4D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,15 +167,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8608A4621B1076360077AB3F /* OSNetworkKit */ = {
+		D3E9E1621B79D8E000D781F4 /* OSNetworkKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8608A4891B1076360077AB3F /* Build configuration list for PBXNativeTarget "OSNetworkKit" */;
+			buildConfigurationList = D3E9E1741B79D8E000D781F4 /* Build configuration list for PBXNativeTarget "OSNetworkKit" */;
 			buildPhases = (
-				3B78078F3897AD25A321ABD9 /* Check Pods Manifest.lock */,
-				8608A45F1B1076360077AB3F /* Sources */,
-				8608A4601B1076360077AB3F /* Frameworks */,
-				8608A4611B1076360077AB3F /* Resources */,
-				ECF56DAAFF4BB408597B2299 /* Copy Pods Resources */,
+				73E9BC33837EC08C482DCFBF /* Check Pods Manifest.lock */,
+				D3E9E15F1B79D8E000D781F4 /* Sources */,
+				D3E9E1601B79D8E000D781F4 /* Frameworks */,
+				D3E9E1611B79D8E000D781F4 /* CopyFiles */,
+				672487C9E0D4B5843B7B9488 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,25 +183,27 @@
 			);
 			name = OSNetworkKit;
 			productName = OSNetworkKit;
-			productReference = 8608A4631B1076360077AB3F /* OSNetworkKit.app */;
-			productType = "com.apple.product-type.application";
+			productReference = D3E9E1631B79D8E000D781F4 /* libOSNetworkKit.a */;
+			productType = "com.apple.product-type.library.static";
 		};
-		8608A47E1B1076360077AB3F /* OSNetworkKitTests */ = {
+		D3E9E16C1B79D8E000D781F4 /* OSNetworkKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8608A48C1B1076360077AB3F /* Build configuration list for PBXNativeTarget "OSNetworkKitTests" */;
+			buildConfigurationList = D3E9E1771B79D8E000D781F4 /* Build configuration list for PBXNativeTarget "OSNetworkKitTests" */;
 			buildPhases = (
-				8608A47B1B1076360077AB3F /* Sources */,
-				8608A47C1B1076360077AB3F /* Frameworks */,
-				8608A47D1B1076360077AB3F /* Resources */,
+				9330061E3425B30F2F97E8A2 /* Check Pods Manifest.lock */,
+				D3E9E1691B79D8E000D781F4 /* Sources */,
+				D3E9E16A1B79D8E000D781F4 /* Frameworks */,
+				D3E9E16B1B79D8E000D781F4 /* Resources */,
+				2A26E37D68FDBBEC84553BEC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8608A4811B1076360077AB3F /* PBXTargetDependency */,
+				D3E9E1701B79D8E000D781F4 /* PBXTargetDependency */,
 			);
 			name = OSNetworkKitTests;
 			productName = OSNetworkKitTests;
-			productReference = 8608A47F1B1076360077AB3F /* OSNetworkKitTests.xctest */;
+			productReference = D3E9E16D1B79D8E000D781F4 /* OSNetworkKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -222,12 +215,11 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Orangesoft;
 				TargetAttributes = {
-					8608A4621B1076360077AB3F = {
-						CreatedOnToolsVersion = 6.3.2;
+					D3E9E1621B79D8E000D781F4 = {
+						CreatedOnToolsVersion = 6.4;
 					};
-					8608A47E1B1076360077AB3F = {
-						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = 8608A4621B1076360077AB3F;
+					D3E9E16C1B79D8E000D781F4 = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -244,24 +236,14 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8608A4621B1076360077AB3F /* OSNetworkKit */,
-				8608A47E1B1076360077AB3F /* OSNetworkKitTests */,
+				D3E9E1621B79D8E000D781F4 /* OSNetworkKit */,
+				D3E9E16C1B79D8E000D781F4 /* OSNetworkKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8608A4611B1076360077AB3F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8608A4751B1076360077AB3F /* Main.storyboard in Resources */,
-				8608A47A1B1076360077AB3F /* LaunchScreen.xib in Resources */,
-				8608A4771B1076360077AB3F /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8608A47D1B1076360077AB3F /* Resources */ = {
+		D3E9E16B1B79D8E000D781F4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -271,22 +253,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3B78078F3897AD25A321ABD9 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		ECF56DAAFF4BB408597B2299 /* Copy Pods Resources */ = {
+		2A26E37D68FDBBEC84553BEC /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -301,59 +268,83 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		672487C9E0D4B5843B7B9488 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73E9BC33837EC08C482DCFBF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9330061E3425B30F2F97E8A2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8608A45F1B1076360077AB3F /* Sources */ = {
+		D3E9E15F1B79D8E000D781F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8608A46C1B1076360077AB3F /* AppDelegate.m in Sources */,
-				8608A46F1B1076360077AB3F /* OSNetworkKit.xcdatamodeld in Sources */,
-				8608A4721B1076360077AB3F /* ViewController.m in Sources */,
-				8608A4691B1076360077AB3F /* main.m in Sources */,
-				ACCA59FA84FD148E961131B6 /* OSRequestOperation.m in Sources */,
-				F2FC37DB90F36D2829B8159E /* OSObjectManager.m in Sources */,
-				F2FC31A867807444633AC9AA /* OSRKRequestOperation.m in Sources */,
+				D3E9E17B1B79D93A00D781F4 /* OSObjectManager.m in Sources */,
+				D3E9E17A1B79D93A00D781F4 /* OSRequestOperation.m in Sources */,
+				D3E9E17C1B79D93A00D781F4 /* OSRKRequestOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8608A47B1B1076360077AB3F /* Sources */ = {
+		D3E9E1691B79D8E000D781F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8608A4861B1076360077AB3F /* OSNetworkKitTests.m in Sources */,
+				D3E9E1801B79DE0B00D781F4 /* TestEntity.m in Sources */,
+				D3E9E17F1B79DE0800D781F4 /* NetworkKitTestModel.xcdatamodeld in Sources */,
+				D3E9E17E1B79DDC600D781F4 /* OSRKRequestOperationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8608A4811B1076360077AB3F /* PBXTargetDependency */ = {
+		D3E9E1701B79D8E000D781F4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8608A4621B1076360077AB3F /* OSNetworkKit */;
-			targetProxy = 8608A4801B1076360077AB3F /* PBXContainerItemProxy */;
+			target = D3E9E1621B79D8E000D781F4 /* OSNetworkKit */;
+			targetProxy = D3E9E16F1B79D8E000D781F4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		8608A4731B1076360077AB3F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8608A4741B1076360077AB3F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8608A4781B1076360077AB3F /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8608A4791B1076360077AB3F /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8608A4871B1076360077AB3F /* Debug */ = {
@@ -436,61 +427,65 @@
 			};
 			name = Release;
 		};
-		8608A48A1B1076360077AB3F /* Debug */ = {
+		D3E9E1751B79D8E000D781F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FD32520F2471026E6DB32993 /* Pods.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = OSNetworkKit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		8608A48B1B1076360077AB3F /* Release */ = {
+		D3E9E1761B79D8E000D781F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6ABEF16D29CD683C31612D77 /* Pods.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = OSNetworkKit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		8608A48D1B1076360077AB3F /* Debug */ = {
+		D3E9E1781B79D8E000D781F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD32520F2471026E6DB32993 /* Pods.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = OSNetworkKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OSNetworkKit.app/OSNetworkKit";
 			};
 			name = Debug;
 		};
-		8608A48E1B1076360077AB3F /* Release */ = {
+		D3E9E1791B79D8E000D781F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ABEF16D29CD683C31612D77 /* Pods.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = OSNetworkKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OSNetworkKit.app/OSNetworkKit";
 			};
 			name = Release;
 		};
@@ -506,20 +501,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8608A4891B1076360077AB3F /* Build configuration list for PBXNativeTarget "OSNetworkKit" */ = {
+		D3E9E1741B79D8E000D781F4 /* Build configuration list for PBXNativeTarget "OSNetworkKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8608A48A1B1076360077AB3F /* Debug */,
-				8608A48B1B1076360077AB3F /* Release */,
+				D3E9E1751B79D8E000D781F4 /* Debug */,
+				D3E9E1761B79D8E000D781F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8608A48C1B1076360077AB3F /* Build configuration list for PBXNativeTarget "OSNetworkKitTests" */ = {
+		D3E9E1771B79D8E000D781F4 /* Build configuration list for PBXNativeTarget "OSNetworkKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8608A48D1B1076360077AB3F /* Debug */,
-				8608A48E1B1076360077AB3F /* Release */,
+				D3E9E1781B79D8E000D781F4 /* Debug */,
+				D3E9E1791B79D8E000D781F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -527,13 +522,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		8608A46D1B1076360077AB3F /* OSNetworkKit.xcdatamodeld */ = {
+		D3E9E1271B79CB9800D781F4 /* NetworkKitTestModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				8608A46E1B1076360077AB3F /* OSNetworkKit.xcdatamodel */,
+				D3E9E1281B79CB9800D781F4 /* NetworkKitTestModel.xcdatamodel */,
 			);
-			currentVersion = 8608A46E1B1076360077AB3F /* OSNetworkKit.xcdatamodel */;
-			path = OSNetworkKit.xcdatamodeld;
+			currentVersion = D3E9E1281B79CB9800D781F4 /* NetworkKitTestModel.xcdatamodel */;
+			path = NetworkKitTestModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
