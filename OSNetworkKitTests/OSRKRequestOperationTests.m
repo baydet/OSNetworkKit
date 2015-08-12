@@ -48,7 +48,7 @@
 
 - (void)setUp {
     [super setUp];
-    self.manager = [OSObjectManager managerWithBaseURL:[NSURL URLWithString:@"http://www.example.com/api"] databaseName:@"testDatabase.sqlite"];
+    self.manager = [OSObjectManager managerWithBaseURL:[NSURL URLWithString:@"http://www.example.com/api"]];
     self.responseDescriptorsCount = self.manager.responseDescriptors.count;
     self.requestDescriptorsCount = self.manager.responseDescriptors.count;
     self.routesCount = self.manager.responseDescriptors.count;
