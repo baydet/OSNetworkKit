@@ -31,7 +31,7 @@
         managedObjectStore.managedObjectCache = [[RKInMemoryManagedObjectCache alloc] initWithManagedObjectContext:managedObjectStore.persistentStoreManagedObjectContext];
     }
 
-    return manager;
+    return (OSObjectManager *) manager;
 }
 
 + (instancetype)managerWithBaseURL:(NSURL *)baseURL
