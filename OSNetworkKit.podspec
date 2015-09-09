@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
   s.source_files  = "Classes", "Classes/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
   s.requires_arc  = true
-  s.dependency "RestKit", "~> 0.25"
+  s.dependency "RestKit", "~> 0.2"
 
 end
