@@ -53,7 +53,7 @@
 		D3E9E12A1B79CBC500D781F4 /* TestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestEntity.h; sourceTree = "<group>"; };
 		D3E9E12B1B79CBC500D781F4 /* TestEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestEntity.m; sourceTree = "<group>"; };
 		D3E9E1631B79D8E000D781F4 /* libOSNetworkKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOSNetworkKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3E9E1651B79D8E000D781F4 /* OSNetworkKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSNetworkKit.h; sourceTree = "<group>"; };
+		D3E9E1651B79D8E000D781F4 /* OSNetworkKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OSNetworkKit.h; path = ../Classes/OSNetworkKit.h; sourceTree = "<group>"; };
 		D3E9E16D1B79D8E000D781F4 /* OSNetworkKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSNetworkKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E9E1731B79D8E000D781F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2FC35F73C21AC763ED9920C /* OSRKRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSRKRequestOperation.m; sourceTree = "<group>"; };
